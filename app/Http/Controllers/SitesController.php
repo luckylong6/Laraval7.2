@@ -8,9 +8,9 @@ class SitesController extends Controller
 {
     public function about() {
         $data = [];
-        $data['name1'] = 'Pater';
+        $data['name1'] = '<span style="color:red">Pater</span>';
         $data['name2'] = 'Tom';
         $data['name3'] = 'Jerr';
-        return view('sites.about', $data);
+        return view('sites.about', ['data' => $data]);
     }
 }
